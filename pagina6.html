@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mendes - fit - aplicativo</title>
+    <link rel="shortcut icon" href="favicon_io (6)/android-chrome-512x512.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background-image.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            background: linear-gradient(-45deg, rgb(3, 212, 3), rgb(5, 122, 5));
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .form-box, .form-box2, .form-box3 {
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 520px;
+            height: 150px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0 20px 40px black;
+            margin: 25px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+            
+        }
+
+        .form-box:hover, .form-box2:hover, .form-box3:hover {
+            transform: scale(1.18);
+            color: rgb(8, 218, 200);
+            box-shadow: 0 10px 40px rgb(8, 218, 200);
+        }
+
+        .form-box {
+            background-image: url(treinos.jpg);
+        }
+
+        .form-box2 {
+            background-image: url(alimentol.webp);
+        }
+
+        .form-box3 {
+            background-image: url(plano\ semanal.avif);
+        }
+
+        .treinos {
+            font-size: 50px;
+            margin: 35px;
+        }
+
+        a {
+            color: rgb(8, 218, 200);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .treinos {
+                font-size: 30px;
+                margin: 20px;
+            }
+
+            .form-box, .form-box2, .form-box3 {
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .treinos {
+                font-size: 24px;
+                margin: 15px;
+            }
+
+            .form-box, .form-box2, .form-box3 {
+                height: 100px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-box">
+                <h1 class="treinos"><a href="treinos.html">Treinos</a></h1>
+            </div>
+
+            <div class="form-box2">
+                <h1 class="treinos"><a href="nutrição.html">Nutrição</a></h1>
+            </div>
+
+            <div class="form-box3">
+                <h1 class="treinos"><a href="plano-semanal.html">Plano semanal</a></h1>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mendes - fit - aplicativo</title>
+    <link rel="shortcut icon" href="favicon_io (6)/android-chrome-512x512.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+            background: linear-gradient(-45deg, rgb(3, 212, 3), rgb(5, 122, 5));
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .form-box {
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            width: 90%;
+            max-width: 560px;
+            height: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: transparent;
+            
+        }
+
+        .começar {
+            margin-top: 20px;
+            width: 80%;
+            max-width: 300px;
+            height: 60px;
+            border: none;
+            border-radius: 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 60px;
+        }
+
+        .começar:hover {
+            transform: scale(1.1);
+            background-color: rgb(48, 255, 48);
+            box-shadow: 0 10px 20px rgb(48, 255, 48);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (min-width: 600px) {
+            .form-box {
+                width: 75%;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .form-box {
+                width: 60%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .form-box {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><!--div pai-->
+        <div class="form-box"><!--div filho-->
+            <form>
+                <img src="nova_logo.png" alt="Logo" style="max-width: 100%; height: auto;"> 
+                <a class="começar" href="pagina2.html">Começar</a><!--botão-->
+            </form>
+        </div>
+    </div>
+</body>
+</html>

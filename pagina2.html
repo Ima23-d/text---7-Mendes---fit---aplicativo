@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mendes - fit - aplicativo</title>
+    <link rel="shortcut icon" href="favicon_io (6)/android-chrome-512x512.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+            background: linear-gradient(-45deg, rgb(3, 212, 3), rgb(5, 122, 5));
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .form-box {
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            width: 90%;
+            max-width: 560px;
+            background-image: url(teste.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0 20px 40px black;
+        }
+
+        .cadastro {
+            font-size: 2.5em;
+            padding-bottom: 10px;
+            margin: 50px 0;
+        }
+
+        input {
+            background-color: white;
+            width: 80%;
+            max-width: 300px;
+            height: 50px;
+            border-radius: 20px;
+            border: none;
+            font-size: 1em;
+            padding: 20px;
+            margin: 10px 0;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        input:hover {
+            color: white;
+            background-color: rgb(10, 228, 10);
+            transform: scale(1.1);
+        }
+
+        .usuario, .email, .senha {
+            font-size: 0.9em;
+            display: block;
+            margin-bottom: 10px;
+            padding-right: 200px;
+        }
+
+        .entrar {
+            font-size: 1.2em;
+            color: white;
+            background-color: rgb(25, 185, 19);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 80%;
+            max-width: 300px;
+            height: 50px;
+        }
+
+        .entrar:hover {
+            background-color: darkblue;
+            transform: scale(1.1);
+        }
+
+        a {
+            color: rgba(1, 193, 252, 0.836);
+            text-decoration: none;
+        }
+
+        .linha {
+            margin: none;
+        }
+
+        .linha h1, .linha a {
+            display: inline-block;
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        @media (min-width: 600px) {
+            .form-box {
+                width: 75%;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .form-box {
+                width: 60%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .form-box {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><!--div pai-->
+        <div class="form-box"><!--div filho-->
+            <h1 class="cadastro">Cadastro</h1><!--texto cadastro-->
+
+            <h1 class="usuario">Usuário</h1>
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Digite o seu nome"><!--nome-->
+
+            <h1 class="email">Email</h1>
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Digite o seu email"><!--email-->
+
+            <h1 class="senha">Senha</h1>
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="Digite a sua senha">
+
+            <div class="linha">
+                <h1>Já possui uma conta?</h1>
+                <h1><a href="#">Fazer login</a></h1><!--fazer login-->
+            </div>
+
+            <form action="pagina3.html" method="get">
+                <button type="submit" class="entrar">Entrar</button><!--botão-->
+            </form>
+        </div>
+    </div>
+</body>
+</html>

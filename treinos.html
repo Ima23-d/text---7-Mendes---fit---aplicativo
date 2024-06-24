@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mendes - fit - aplicativo</title>
+    <link rel="shortcut icon" href="favicon_io (6)/android-chrome-512x512.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background-image.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+            background: linear-gradient(-45deg, rgb(3, 212, 3), rgb(5, 122, 5));
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .t {
+            font-size: 50px;
+            color: white;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-box, .form-box2, .form-box3, .form-box4, .form-box5, .form-box6, .form-box7 {
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 520px;
+            height: 150px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0 20px 40px black;
+            margin: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .form-box {
+            background-image: url('treino de braço.png');
+        }
+
+        .form-box2 {
+            background-image: url('treino de costa.png');
+        }
+
+        .form-box3 {
+            background-image: url('treino de abdomen.png');
+        }
+
+        .form-box4 {
+            background-image: url('treino de perna.png');
+        }
+
+        .form-box5 {
+            background-image: url('treino de peito.png');
+        }
+
+        .form-box6 {
+            background-image: url('treino de ombros.png');
+        }
+
+        .form-box7 {
+            background-color: rgb(5, 168, 5);
+        }
+
+        .form-box:hover, .form-box2:hover, .form-box3:hover, .form-box4:hover, .form-box5:hover, .form-box6:hover, .form-box7:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 40px rgb(8, 218, 200);
+            color: rgb(8, 218, 200);
+        }
+
+        .form-box7:hover {
+            background-color: rgb(8, 218, 200);
+            color: black;
+        }
+
+        .treinos {
+            font-size: 45px;
+            margin: 10px 0;
+        }
+
+        .a {
+            font-size: 18px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .treinos {
+                font-size: 35px;
+            }
+            .form-box, .form-box2, .form-box3, .form-box4, .form-box5, .form-box6, .form-box7 {
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .t {
+                font-size: 40px;
+            }
+            .treinos {
+                font-size: 30px;
+            }
+            .form-box, .form-box2, .form-box3, .form-box4, .form-box5, .form-box6, .form-box7 {
+                height: 100px;
+                padding: 10px;
+            }
+            .a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1 class="t">Treinos:</h1>
+            <div class="form-box">
+                <h1 class="treinos"><a href="braço.html">Treino braço</a></h1>
+                <h1 class="a">6 exercicios</h1>
+            </div>
+
+            <div class="form-box2">
+                <h1 class="treinos"><a href="costa.html">Treino costas</a></h1>
+                <h1 class="a">5 exercicios</h1>
+            </div>
+
+            <div class="form-box3">
+                <h1 class="treinos"><a href="abdomen.html">Treino abdômen</a></h1>
+                <h1 class="a">6 exercicios</h1>
+            </div>
+
+            <div class="form-box4">
+                <h1 class="treinos"><a href="perna.html">Treino perna</a></h1>
+                <h1 class="a">4 exercicios</h1>
+            </div>
+
+            <div class="form-box5">
+                <h1 class="treinos"><a href="peito.html">Treino peito</a></h1>
+                <h1 class="a">5 exercicios</h1>
+            </div>
+
+            <div class="form-box6">
+                <h1 class="treinos"><a href="ombro.html">Treino ombros</a></h1>
+                <h1 class="a">5 exercicios</h1>
+            </div>
+
+            <div class="form-box7">
+                <h1 class="treinos"><a href="todos.html">Todos os treinos</a></h1>
+                <h1 class="a">5 exercicios</h1>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
